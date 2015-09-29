@@ -17,5 +17,6 @@
 #import "UIView+JDUtils.h"
 #import "UIButton+JDUtils.h"
 #import "UIViewController+JDUtils.h"
+#import "JDMessageCenter.h"
 
 #endif

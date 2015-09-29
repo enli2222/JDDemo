@@ -10,8 +10,29 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+/**
+ *  AppDelegate单例
+ *
+ *  @return 返回AppDelegate单例
+ */
++ (AppDelegate*)sharedInstance;
 
+/**
+ *  获得当前navigation controller(storyboard下未测试)
+ *
+ *  @return 返回当前navigation controller
+ */
+- (UINavigationController*)currentNavigationController;
+
+/**
+ *  获得当前controller(storyboard下未测试)
+ *
+ *  @return 返回当前controller
+ */
+- (UIViewController*)currentViewController;
+
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end
 

@@ -11,7 +11,7 @@
 
 #ifdef DEBUG
 
-#define JDLog(format, ...) ([JDMisc output:__FILE__ lineNumber:__LINE__ input:(format), ## __VA_ARGS__])
+#define JDLog(format, ...) ([JDMisc jd_output:__FILE__ lineNumber:__LINE__ input:(format), ## __VA_ARGS__])
 
 #else
 

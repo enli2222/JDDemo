@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "JDUtils.h"
 
 @interface ViewController ()
+- (IBAction)clickButton:(id)sender;
 
 @end
 
@@ -16,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickButton:(id)sender {
+    jd_HUD_Success(@"ok");
+}
 @end

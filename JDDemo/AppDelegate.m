@@ -14,6 +14,7 @@
 
 @implementation AppDelegate
 
+#pragma mark - Life cycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -42,4 +43,23 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Public methods
+
++ (AppDelegate*)sharedInstance {
+    AppDelegate* appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    return appDelegate;
+}
+
+- (UINavigationController*)currentNavigationController {
+    if ([self.viewController respondsToSelector:@selector(selectedViewController)]){
+        UINavigationController *selectedNavigationController = [self.viewController performSelector:@selector(selectedViewController)];
+        return selectedNavigationController;
+    }else{
+        return nil;
+    }
+}
+
+- (UIViewController*)currentViewController {
+    return self.currentNavigationController.topViewController;
+}
 @end
