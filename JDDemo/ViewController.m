@@ -26,6 +26,7 @@
 }
 
 - (IBAction)clickButton:(id)sender {
-    jd_HUD_Success(@"ok");
+    NSString *str = @"string";
+    JDLog(@"%@",[str jd_MD5]);
 }
 @end

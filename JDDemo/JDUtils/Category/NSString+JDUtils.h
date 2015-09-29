@@ -42,4 +42,11 @@
  */
 - (BOOL)jd_isValidMobile:(NSString *)mobile;
 
+/**
+ *  产生MD5
+ *
+ *  @return MD5
+ */
+- (NSString *)jd_MD5;
+
 @end
