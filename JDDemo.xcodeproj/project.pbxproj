@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4366C73A51C790A66E547A12 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F6DE1C58207E8E8E7BE9F /* libPods.a */; };
 		594F0DA31BBA634D0000DFCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DA21BBA634D0000DFCB /* main.m */; };
 		594F0DA61BBA634D0000DFCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DA51BBA634D0000DFCB /* AppDelegate.m */; };
 		594F0DA91BBA634D0000DFCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DA81BBA634D0000DFCB /* ViewController.m */; };
@@ -14,6 +15,14 @@
 		594F0DAE1BBA634D0000DFCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594F0DAD1BBA634D0000DFCB /* Images.xcassets */; };
 		594F0DB11BBA634D0000DFCB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594F0DAF1BBA634D0000DFCB /* LaunchScreen.xib */; };
 		594F0DBD1BBA634D0000DFCB /* JDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DBC1BBA634D0000DFCB /* JDDemoTests.m */; };
+		594F0DDB1BBA65530000DFCB /* NSDate+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DC91BBA65530000DFCB /* NSDate+JDUtils.m */; };
+		594F0DDC1BBA65530000DFCB /* NSString+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DCB1BBA65530000DFCB /* NSString+JDUtils.m */; };
+		594F0DDD1BBA65530000DFCB /* UIButton+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DCD1BBA65530000DFCB /* UIButton+JDUtils.m */; };
+		594F0DDE1BBA65530000DFCB /* UIImage+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DCF1BBA65530000DFCB /* UIImage+JDUtils.m */; };
+		594F0DDF1BBA65530000DFCB /* UIView+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD11BBA65530000DFCB /* UIView+JDUtils.m */; };
+		594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */; };
+		594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD81BBA65530000DFCB /* JDMisc.m */; };
+		594F0DE21BBA65530000DFCB /* NSString+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DDA1BBA65530000DFCB /* NSString+JDUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0A4D42A13AD5FB06E7B052 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		594F0D9D1BBA634D0000DFCB /* JDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		594F0DA11BBA634D0000DFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594F0DA21BBA634D0000DFCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,26 @@
 		594F0DB61BBA634D0000DFCB /* JDDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		594F0DBB1BBA634D0000DFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594F0DBC1BBA634D0000DFCB /* JDDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDDemoTests.m; sourceTree = "<group>"; };
+		594F0DC81BBA65530000DFCB /* NSDate+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DC91BBA65530000DFCB /* NSDate+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DCA1BBA65530000DFCB /* NSString+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DCB1BBA65530000DFCB /* NSString+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DCC1BBA65530000DFCB /* UIButton+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DCD1BBA65530000DFCB /* UIButton+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DCE1BBA65530000DFCB /* UIImage+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DCF1BBA65530000DFCB /* UIImage+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DD01BBA65530000DFCB /* UIView+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DD11BBA65530000DFCB /* UIView+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DD21BBA65530000DFCB /* UIViewController+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JDUtils.m"; sourceTree = "<group>"; };
+		594F0DD41BBA65530000DFCB /* JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUtils.h; sourceTree = "<group>"; };
+		594F0DD61BBA65530000DFCB /* JDDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDefault.h; sourceTree = "<group>"; };
+		594F0DD71BBA65530000DFCB /* JDMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMisc.h; sourceTree = "<group>"; };
+		594F0DD81BBA65530000DFCB /* JDMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMisc.m; sourceTree = "<group>"; };
+		594F0DD91BBA65530000DFCB /* NSString+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JDUtils.h"; sourceTree = "<group>"; };
+		594F0DDA1BBA65530000DFCB /* NSString+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JDUtils.m"; sourceTree = "<group>"; };
+		8F0F6DE1C58207E8E8E7BE9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4928E19DD71DE72A3868E9E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4366C73A51C790A66E547A12 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +97,8 @@
 				594F0D9F1BBA634D0000DFCB /* JDDemo */,
 				594F0DB91BBA634D0000DFCB /* JDDemoTests */,
 				594F0D9E1BBA634D0000DFCB /* Products */,
+				C88DE3C84D55C5CD243E3476 /* Pods */,
+				6085DCC77792A4CA7DC517C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +114,7 @@
 		594F0D9F1BBA634D0000DFCB /* JDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				594F0DC61BBA65530000DFCB /* JDUtils */,
 				594F0DA41BBA634D0000DFCB /* AppDelegate.h */,
 				594F0DA51BBA634D0000DFCB /* AppDelegate.m */,
 				594F0DA71BBA634D0000DFCB /* ViewController.h */,
@@ -119,6 +153,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		594F0DC61BBA65530000DFCB /* JDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				594F0DC71BBA65530000DFCB /* Category */,
+				594F0DD41BBA65530000DFCB /* JDUtils.h */,
+				594F0DD51BBA65530000DFCB /* Misc */,
+			);
+			path = JDUtils;
+			sourceTree = "<group>";
+		};
+		594F0DC71BBA65530000DFCB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				594F0DC81BBA65530000DFCB /* NSDate+JDUtils.h */,
+				594F0DC91BBA65530000DFCB /* NSDate+JDUtils.m */,
+				594F0DCA1BBA65530000DFCB /* NSString+JDUtils.h */,
+				594F0DCB1BBA65530000DFCB /* NSString+JDUtils.m */,
+				594F0DCC1BBA65530000DFCB /* UIButton+JDUtils.h */,
+				594F0DCD1BBA65530000DFCB /* UIButton+JDUtils.m */,
+				594F0DCE1BBA65530000DFCB /* UIImage+JDUtils.h */,
+				594F0DCF1BBA65530000DFCB /* UIImage+JDUtils.m */,
+				594F0DD01BBA65530000DFCB /* UIView+JDUtils.h */,
+				594F0DD11BBA65530000DFCB /* UIView+JDUtils.m */,
+				594F0DD21BBA65530000DFCB /* UIViewController+JDUtils.h */,
+				594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		594F0DD51BBA65530000DFCB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				594F0DD61BBA65530000DFCB /* JDDefault.h */,
+				594F0DD71BBA65530000DFCB /* JDMisc.h */,
+				594F0DD81BBA65530000DFCB /* JDMisc.m */,
+				594F0DD91BBA65530000DFCB /* NSString+JDUtils.h */,
+				594F0DDA1BBA65530000DFCB /* NSString+JDUtils.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		6085DCC77792A4CA7DC517C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F0F6DE1C58207E8E8E7BE9F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C88DE3C84D55C5CD243E3476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A0A4D42A13AD5FB06E7B052 /* Pods.debug.xcconfig */,
+				D4928E19DD71DE72A3868E9E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 594F0DC01BBA634D0000DFCB /* Build configuration list for PBXNativeTarget "JDDemo" */;
 			buildPhases = (
+				10B819DD1781B2DBDE5AAD51 /* Check Pods Manifest.lock */,
 				594F0D991BBA634D0000DFCB /* Sources */,
 				594F0D9A1BBA634D0000DFCB /* Frameworks */,
 				594F0D9B1BBA634D0000DFCB /* Resources */,
+				BDC8B2120B65CDF8B3463BAC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +308,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10B819DD1781B2DBDE5AAD51 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDC8B2120B65CDF8B3463BAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		594F0D991BBA634D0000DFCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594F0DDE1BBA65530000DFCB /* UIImage+JDUtils.m in Sources */,
+				594F0DDB1BBA65530000DFCB /* NSDate+JDUtils.m in Sources */,
 				594F0DA91BBA634D0000DFCB /* ViewController.m in Sources */,
+				594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */,
 				594F0DA61BBA634D0000DFCB /* AppDelegate.m in Sources */,
 				594F0DA31BBA634D0000DFCB /* main.m in Sources */,
+				594F0DE21BBA65530000DFCB /* NSString+JDUtils.m in Sources */,
+				594F0DDC1BBA65530000DFCB /* NSString+JDUtils.m in Sources */,
+				594F0DDF1BBA65530000DFCB /* UIView+JDUtils.m in Sources */,
+				594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */,
+				594F0DDD1BBA65530000DFCB /* UIButton+JDUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +480,7 @@
 		};
 		594F0DC11BBA634D0000DFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0A4D42A13AD5FB06E7B052 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JDDemo/Info.plist;
@@ -355,6 +491,7 @@
 		};
 		594F0DC21BBA634D0000DFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4928E19DD71DE72A3868E9E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JDDemo/Info.plist;
@@ -416,6 +553,7 @@
 				594F0DC21BBA634D0000DFCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		594F0DC31BBA634D0000DFCB /* Build configuration list for PBXNativeTarget "JDDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +562,7 @@
 				594F0DC51BBA634D0000DFCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
