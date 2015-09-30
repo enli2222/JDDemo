@@ -9,12 +9,12 @@
 #ifndef JDUtils_JDDefault_h
 #define JDUtils_JDDefault_h
 
-static const CGFloat kTabbarHeight = 49.0f;
-static const CGFloat kStatusBarHeight = 20.0f;
-static const CGFloat kNavigationBarHeight = 44.0f;
-static const CGFloat kToolBarHeight = 44.0f;
+static const CGFloat jdTabbarHeight = 49.0f;
+static const CGFloat jdStatusBarHeight = 20.0f;
+static const CGFloat jdNavigationBarHeight = 44.0f;
+static const CGFloat jdToolBarHeight = 44.0f;
 
-#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+#define jdScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define jdScreenHeight   [UIScreen mainScreen].bounds.size.height
 
 #endif
