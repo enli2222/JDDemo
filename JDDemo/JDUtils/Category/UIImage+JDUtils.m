@@ -125,5 +125,53 @@
     return [componets mutableCopy];
 }
 
+- (UIImage *)jd_scaleToSize:(CGSize)size {
+    //创建一个大小为size的image context，并将其设置为当前正在使用的context
+    UIGraphicsBeginImageContext(size);
+    //根据原图，绘制大小为size的图片
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    //从当前的image context获得图片，此时图片为大小改变后的图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    //当前image context出栈
+    UIGraphicsEndImageContext();
+    return image;
+}
+
++ (UIImage *)jd_imageWithColor:(UIColor *)color {
+    CGRect frame = CGRectMake(0, 0, 1, 1);
+    //创建一个image context，并将其设置为当前正在使用的context
+    UIGraphicsBeginImageContext(frame.size);
+    //获得当前正在使用的context
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    //填充颜色
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    //设置填充区域
+    CGContextFillRect(context, frame);
+    //从当前的image context获得图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    //当前image context出栈
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (UIImage *)jd_trimWithRect:(CGRect)rect {
+    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
+    CGRect smallRect = CGRectMake(0, 0, rect.size.width, rect.size.height);
+    //创建一个image context，并将其设置为当前正在使用的context
+    UIGraphicsBeginImageContext(smallRect.size);
+    //获得当前正在使用的context
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    //绘制图片
+    CGContextDrawImage(context, smallRect, imageRef);
+    UIImage *image = [UIImage imageWithCGImage:imageRef];
+    //当前image context出栈
+    UIGraphicsEndImageContext();
+    return image;
+}
+
++ (UIImage *)jd_rotateImageWithImageName:(NSString *)imageName orientation:(UIImageOrientation)orientation {
+    CIImage *srcImage = [[CIImage alloc]initWithImage:[UIImage imageNamed:imageName]];
+    return [UIImage imageWithCIImage:srcImage scale:1.0 orientation:orientation];
+}
 
 @end
