@@ -27,20 +27,16 @@
 /**
  *  判断是否有效邮箱
  *
- *  @param email 邮箱
- *
  *  @return 返回是否有效
  */
-- (BOOL)jd_isValidEmail:(NSString *)email;
+- (BOOL)jd_isValidEmail;
 
 /**
  *  判断是否有效手机号码
  *
- *  @param mobile 手机号码
- *
  *  @return 返回是否有效
  */
-- (BOOL)jd_isValidMobile:(NSString *)mobile;
+- (BOOL)jd_isValidPhone;
 
 /**
  *  产生MD5

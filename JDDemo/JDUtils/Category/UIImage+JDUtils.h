@@ -32,4 +32,42 @@
  *  @return 返回颜色RGB值
  */
 - (NSArray *)jd_RGBComponentsWithColor:(UIColor *)color;
+
+/**
+ *  获得缩略图
+ *
+ *  @param size 缩略图大小
+ *
+ *  @return 缩略图
+ */
+- (UIImage *)jd_scaleToSize:(CGSize)size;
+
+/**
+ *  根据颜色创建图片
+ *
+ *  @param color 图片颜色
+ *
+ *  @return 图片
+ */
++ (UIImage *)jd_imageWithColor:(UIColor *)color;
+
+/**
+ *  截取图片
+ *
+ *  @param rect 位置、大小
+ *
+ *  @return 图片
+ */
+- (UIImage *)jd_trimWithRect:(CGRect)rect;
+
+/**
+ *  获得旋转后的图片
+ *
+ *  @param imageName   图片名
+ *  @param orientation 旋转方向
+ *
+ *  @return 旋转后图片
+ */
++ (UIImage *)jd_rotateImageWithImageName:(NSString *)imageName orientation:(UIImageOrientation)orientation;
+
 @end

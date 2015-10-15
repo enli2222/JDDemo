@@ -14,7 +14,7 @@ static const CGFloat jdStatusBarHeight = 20.0f;
 static const CGFloat jdNavigationBarHeight = 44.0f;
 static const CGFloat jdToolBarHeight = 44.0f;
 
-#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+#define jdScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define jdScreenHeight   [UIScreen mainScreen].bounds.size.height
 
 #endif
