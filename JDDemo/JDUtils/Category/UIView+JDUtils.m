@@ -17,14 +17,15 @@ static const CGFloat kRadius = 4;  //  if is ipad,should be 8
 }
 
 - (void)jd_setRoundCornerWithRadius:(CGFloat)radius {
-    [self.layer setCornerRadius:radius];
-    [self.layer setMasksToBounds:YES];
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+    self.layer.shouldRasterize = YES;
+    self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    self.clipsToBounds = YES;
 }
 
 - (void)jd_setAsRound {
-    [self.layer setCornerRadius:CGRectGetWidth(self.frame)/2];
-    [self.layer setMasksToBounds:YES];
-    self.clipsToBounds = YES;
+    [self jd_setRoundCornerWithRadius:CGRectGetWidth(self.frame)/2];
 }
 
 - (void)jd_setHalfRoundCorner {

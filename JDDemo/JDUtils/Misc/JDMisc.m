@@ -7,6 +7,7 @@
 //
 
 #import "JDMisc.h"
+#import "NSString+JDUtils.h"
 
 @implementation JDMisc
 
@@ -47,5 +48,20 @@ static NSString * const kFirstLaunch  = @"firstLaunch";
     NSLog(@"%@[%d] %@", [filePath lastPathComponent], lineNumber, formatStr);
 }
 
++ (NSString *)jd_stringWithCount:(NSInteger)count
+                        maxCount:(NSInteger)maxCount
+                     placeholder:(NSString *)placeholder {
+    if (count <= 0) {
+        if (![placeholder jd_isValid]) {
+            return placeholder;
+        }else {
+            return @"";
+        }
+    }else if (count <= maxCount){
+        return [NSString stringWithFormat:@"%ld",count];
+    }else {
+        return [NSString stringWithFormat:@"%ld++",count];
+    }
+}
 
 @end
