@@ -58,9 +58,9 @@ static NSString * const kFirstLaunch  = @"firstLaunch";
             return @"";
         }
     }else if (count <= maxCount){
-        return [NSString stringWithFormat:@"%ld",count];
+        return [NSString stringWithFormat:@"%ld",(long)count];
     }else {
-        return [NSString stringWithFormat:@"%ld++",count];
+        return [NSString stringWithFormat:@"%ld++",(long)count];
     }
 }
 
