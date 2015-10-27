@@ -14,6 +14,7 @@
 - UIView+JDUtils
 - UIButton+JDUtils
 - UIViewController+JDUtils
+- UIDevice+JDUtils
 
 #####  Misc
 
