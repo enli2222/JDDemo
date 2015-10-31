@@ -30,6 +30,20 @@
  */
 #define jd_RGB(iRed,iGreen,iBlue)  [UIColor colorWithRed:iRed/255.0 green:iGreen/255.0 blue:iBlue/255.0 alpha:1]
 
+/**
+ *  安全地执行block
+ *
+ *  @param A 具体的block
+ */
+#define JD_EXECUTE_BLOCK(A,...)            if(A != NULL) {A(__VA_ARGS__);}
+
+/**
+ *  标识废弃的方法
+ *
+ *  @param explain 解释，可以是建议使用的方法
+ */
+#define JDDeprecated(explain) __attribute__((deprecated(explain)))
+
 @interface JDMisc : NSObject
 
 /**

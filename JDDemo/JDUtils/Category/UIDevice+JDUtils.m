@@ -17,7 +17,7 @@
 static NSString *jdModelTmp;
 - (NSString *)jdModel {
     if (!jdModelTmp) {
-        NSDictionary *dict = @{ @"iPhone1,1" : @"iPhone 2G",
+        NSDictionary *dict = @{ @"iPhone1,1" : @"iPhone",
                                 @"iPhone1,2" : @"iPhone 3G",
                                 @"iPhone2,1" : @"iPhone 3GS",
                                 @"iPhone3,1" : @"iPhone 4",
@@ -35,14 +35,16 @@ static NSString *jdModelTmp;
                                 @"iPhone8,1" : @"iPhone 6s",
                                 @"iPhone8,2" : @"iPhone 6s Plus",
                                 
-                                @"iPod1,1" : @"iPod Touch 1G",
+                                @"iPod1,1" : @"iPod Touch",
                                 @"iPod2,1" : @"iPod Touch 2G",
                                 @"iPod3,1" : @"iPod Touch 3G",
                                 @"iPod4,1" : @"iPod Touch 4G",
                                 @"iPod5,1" : @"iPod Touch 5G",
+                                @"iPod7,1" : @"iPod Touch 6G",
                                 
                                 @"iPad1,1" : @"iPad 1G",
                                 
+                                @"iPad2,1" : @"iPad 2",
                                 @"iPad2,2" : @"iPad 2",
                                 @"iPad2,3" : @"iPad 2",
                                 @"iPad2,4" : @"iPad 2",
@@ -60,12 +62,23 @@ static NSString *jdModelTmp;
                                 @"iPad4,1" : @"iPad Air",
                                 @"iPad4,2" : @"iPad Air",
                                 @"iPad4,3" : @"iPad Air",
-                                @"iPad4,4" : @"iPad Mini 2G",
-                                @"iPad4,5" : @"iPad Mini 2G",
-                                @"iPad4,6" : @"iPad Mini 2G",
+                                @"iPad4,4" : @"iPad Mini 2",
+                                @"iPad4,5" : @"iPad Mini 2",
+                                @"iPad4,6" : @"iPad Mini 2",
+                                @"iPad4,7" : @"iPad Mini 3",
+                                @"iPad4,8" : @"iPad Mini 3",
+                                @"iPad4,9" : @"iPad Mini 3",
+                                
+                                @"iPad5,1" : @"iPad Mini 4",
+                                @"iPad5,2" : @"iPad Mini 4",
+                                @"iPad5,3" : @"iPad Air 2",
+                                @"iPad5,4" : @"iPad Air 2",
                                 
                                 @"i386" : @"iPhone Simulator",
-                                @"x86_64" : @"iPhone Simulator"
+                                @"x86_64" : @"iPhone Simulator",
+                                
+                                @"Watch1,1" : @"Apple Watch",
+                                @"Watch1,2" : @"Apple Watch"
                                 };
         NSString *platform = [self platform];
         jdModelTmp = [dict objectForKey:platform];
