@@ -23,6 +23,7 @@
 		594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */; };
 		594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD81BBA65530000DFCB /* JDMisc.m */; };
 		594F0DE51BBA7B910000DFCB /* JDMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */; };
+		7CFAC26A1BEF885B00CF5988 /* UINavigationController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		594F0DD81BBA65530000DFCB /* JDMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMisc.m; sourceTree = "<group>"; };
 		594F0DE31BBA7B910000DFCB /* JDMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessageCenter.h; sourceTree = "<group>"; };
 		594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageCenter.m; sourceTree = "<group>"; };
+		7CFAC2681BEF885B00CF5988 /* UINavigationController+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JDUtils.h"; sourceTree = "<group>"; };
+		7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JDUtils.m"; sourceTree = "<group>"; };
 		8F0F6DE1C58207E8E8E7BE9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4928E19DD71DE72A3868E9E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +181,8 @@
 				594F0DD11BBA65530000DFCB /* UIView+JDUtils.m */,
 				594F0DD21BBA65530000DFCB /* UIViewController+JDUtils.h */,
 				594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */,
+				7CFAC2681BEF885B00CF5988 /* UINavigationController+JDUtils.h */,
+				7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				594F0DDF1BBA65530000DFCB /* UIView+JDUtils.m in Sources */,
 				594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */,
 				594F0DE51BBA7B910000DFCB /* JDMessageCenter.m in Sources */,
+				7CFAC26A1BEF885B00CF5988 /* UINavigationController+JDUtils.m in Sources */,
 				594F0DDD1BBA65530000DFCB /* UIButton+JDUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

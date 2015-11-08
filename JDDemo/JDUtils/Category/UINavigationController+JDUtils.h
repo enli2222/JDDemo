@@ -10,4 +10,12 @@
 
 @interface UINavigationController (JDUtils)
 
+/**
+ *  hide bottom bar when push
+ *
+ *  @param viewController the view controller want to push
+ *  @param animated push with animation
+ */
+- (void)jd_pushViewController:(UIViewController *)viewController
+                     animated:(BOOL)animated;
 @end

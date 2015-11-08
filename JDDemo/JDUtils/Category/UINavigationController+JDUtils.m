@@ -9,5 +9,9 @@
 #import "UINavigationController+JDUtils.h"
 
 @implementation UINavigationController (JDUtils)
-
+- (void)jd_pushViewController:(UIViewController *)viewController
+                     animated:(BOOL)animated {
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self pushViewController:viewController animated:YES];
+}
 @end

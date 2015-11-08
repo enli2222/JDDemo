@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68D98134-85AE-44F5-8535-11137A0339E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JDDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88C8DF70BB91AD7C565785744846C7567B454EBC</key>
+		<string>github.com:JiandanDream/JDDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JDDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88C8DF70BB91AD7C565785744846C7567B454EBC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:JiandanDream/JDDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88C8DF70BB91AD7C565785744846C7567B454EBC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88C8DF70BB91AD7C565785744846C7567B454EBC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JDDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
