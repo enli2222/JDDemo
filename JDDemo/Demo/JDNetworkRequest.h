@@ -8,6 +8,37 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol JDNetworkRequestDatasource <NSObject>
+
+- (NSString *)jdNetworkRequestBaseURLString; //基本网址，用于初始化
+
+@end
+
+//网络请求类型
+typedef NS_ENUM(NSUInteger,JDNetworkRequestType) {
+    JDNetworkRequestTypePost,
+    JDNetworkRequestTypeGet,
+    JDNetworkRequestTypeHead,
+    JDNetworkRequestTypePut,
+    JDNetworkRequestTypeDelete
+};
+
+typedef void(^JDNetworkRequestResultBlock)(id responseObject,NSError *error);
+
 @interface JDNetworkRequest : NSObject
 
+@property (nonatomic, weak) id<JDNetworkRequestDatasource> datasource;
+
+/**
+ *  发送网络请求
+ *
+ *  @param urlString   网址字符串
+ *  @param parameters  参数
+ *  @param type        请求类型
+ *  @param resultBlock 返回结果：responseObject,error
+ */
+- (void)jd_requestWithURLString:(NSString *)urlString
+                     parameters:(NSDictionary *)parameters
+                           type:(JDNetworkRequestType)type
+                    resultBlock:(JDNetworkRequestResultBlock)resultBlock;
 @end

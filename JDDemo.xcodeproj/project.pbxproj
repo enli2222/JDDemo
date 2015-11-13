@@ -23,6 +23,8 @@
 		594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD31BBA65530000DFCB /* UIViewController+JDUtils.m */; };
 		594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD81BBA65530000DFCB /* JDMisc.m */; };
 		594F0DE51BBA7B910000DFCB /* JDMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */; };
+		59D909C71BF5FD740070B13F /* JDDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D909C61BF5FD740070B13F /* JDDemoTableViewController.m */; };
+		59DF3CF81BF339F800572C4D /* JDNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DF3CF71BF339F800572C4D /* JDNetworkRequest.m */; };
 		7CFAC26A1BEF885B00CF5988 /* UINavigationController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,10 @@
 		594F0DD81BBA65530000DFCB /* JDMisc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMisc.m; sourceTree = "<group>"; };
 		594F0DE31BBA7B910000DFCB /* JDMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessageCenter.h; sourceTree = "<group>"; };
 		594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageCenter.m; sourceTree = "<group>"; };
+		59D909C51BF5FD740070B13F /* JDDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDemoTableViewController.h; sourceTree = "<group>"; };
+		59D909C61BF5FD740070B13F /* JDDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDemoTableViewController.m; sourceTree = "<group>"; };
+		59DF3CF61BF339F800572C4D /* JDNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetworkRequest.h; sourceTree = "<group>"; };
+		59DF3CF71BF339F800572C4D /* JDNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetworkRequest.m; sourceTree = "<group>"; };
 		7CFAC2681BEF885B00CF5988 /* UINavigationController+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JDUtils.h"; sourceTree = "<group>"; };
 		7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JDUtils.m"; sourceTree = "<group>"; };
 		8F0F6DE1C58207E8E8E7BE9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +123,7 @@
 		594F0D9F1BBA634D0000DFCB /* JDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				59DF3CF51BF339C400572C4D /* Demo */,
 				594F0DC61BBA65530000DFCB /* JDUtils */,
 				594F0DA41BBA634D0000DFCB /* AppDelegate.h */,
 				594F0DA51BBA634D0000DFCB /* AppDelegate.m */,
@@ -126,6 +133,8 @@
 				594F0DAD1BBA634D0000DFCB /* Images.xcassets */,
 				594F0DAF1BBA634D0000DFCB /* LaunchScreen.xib */,
 				594F0DA01BBA634D0000DFCB /* Supporting Files */,
+				59D909C51BF5FD740070B13F /* JDDemoTableViewController.h */,
+				59D909C61BF5FD740070B13F /* JDDemoTableViewController.m */,
 			);
 			path = JDDemo;
 			sourceTree = "<group>";
@@ -199,6 +208,15 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		59DF3CF51BF339C400572C4D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				59DF3CF61BF339F800572C4D /* JDNetworkRequest.h */,
+				59DF3CF71BF339F800572C4D /* JDNetworkRequest.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		6085DCC77792A4CA7DC517C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +246,7 @@
 				594F0D9A1BBA634D0000DFCB /* Frameworks */,
 				594F0D9B1BBA634D0000DFCB /* Resources */,
 				BDC8B2120B65CDF8B3463BAC /* Copy Pods Resources */,
+				65D0063F285BB796EBB4C0B6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,6 +348,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		65D0063F285BB796EBB4C0B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BDC8B2120B65CDF8B3463BAC /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,7 +395,9 @@
 				594F0DDF1BBA65530000DFCB /* UIView+JDUtils.m in Sources */,
 				594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */,
 				594F0DE51BBA7B910000DFCB /* JDMessageCenter.m in Sources */,
+				59DF3CF81BF339F800572C4D /* JDNetworkRequest.m in Sources */,
 				7CFAC26A1BEF885B00CF5988 /* UINavigationController+JDUtils.m in Sources */,
+				59D909C71BF5FD740070B13F /* JDDemoTableViewController.m in Sources */,
 				594F0DDD1BBA65530000DFCB /* UIButton+JDUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
