@@ -24,6 +24,7 @@
 		594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DD81BBA65530000DFCB /* JDMisc.m */; };
 		594F0DE51BBA7B910000DFCB /* JDMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */; };
 		59D909C71BF5FD740070B13F /* JDDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D909C61BF5FD740070B13F /* JDDemoTableViewController.m */; };
+		59DDDE671BF6D55F000920E3 /* UIDevice+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDDE661BF6D55F000920E3 /* UIDevice+JDUtils.m */; };
 		59DF3CF81BF339F800572C4D /* JDNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DF3CF71BF339F800572C4D /* JDNetworkRequest.m */; };
 		7CFAC26A1BEF885B00CF5988 /* UINavigationController+JDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFAC2691BEF885B00CF5988 /* UINavigationController+JDUtils.m */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,8 @@
 		594F0DE41BBA7B910000DFCB /* JDMessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageCenter.m; sourceTree = "<group>"; };
 		59D909C51BF5FD740070B13F /* JDDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDemoTableViewController.h; sourceTree = "<group>"; };
 		59D909C61BF5FD740070B13F /* JDDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDemoTableViewController.m; sourceTree = "<group>"; };
+		59DDDE651BF6D55F000920E3 /* UIDevice+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JDUtils.h"; sourceTree = "<group>"; };
+		59DDDE661BF6D55F000920E3 /* UIDevice+JDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JDUtils.m"; sourceTree = "<group>"; };
 		59DF3CF61BF339F800572C4D /* JDNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetworkRequest.h; sourceTree = "<group>"; };
 		59DF3CF71BF339F800572C4D /* JDNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetworkRequest.m; sourceTree = "<group>"; };
 		7CFAC2681BEF885B00CF5988 /* UINavigationController+JDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JDUtils.h"; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 		594F0DC71BBA65530000DFCB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				59DDDE651BF6D55F000920E3 /* UIDevice+JDUtils.h */,
+				59DDDE661BF6D55F000920E3 /* UIDevice+JDUtils.m */,
 				594F0DC81BBA65530000DFCB /* NSDate+JDUtils.h */,
 				594F0DC91BBA65530000DFCB /* NSDate+JDUtils.m */,
 				594F0DCA1BBA65530000DFCB /* NSString+JDUtils.h */,
@@ -391,6 +396,7 @@
 				594F0DE11BBA65530000DFCB /* JDMisc.m in Sources */,
 				594F0DA61BBA634D0000DFCB /* AppDelegate.m in Sources */,
 				594F0DA31BBA634D0000DFCB /* main.m in Sources */,
+				59DDDE671BF6D55F000920E3 /* UIDevice+JDUtils.m in Sources */,
 				594F0DDC1BBA65530000DFCB /* NSString+JDUtils.m in Sources */,
 				594F0DDF1BBA65530000DFCB /* UIView+JDUtils.m in Sources */,
 				594F0DE01BBA65530000DFCB /* UIViewController+JDUtils.m in Sources */,

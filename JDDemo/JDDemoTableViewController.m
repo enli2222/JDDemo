@@ -42,6 +42,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:{
+            //网络请求例子
             JDNetworkRequest *networkRequest = [[JDNetworkRequest alloc]init];
             networkRequest.datasource = self;
             //TODO: 以下网址及参数是无效的，请自行更换

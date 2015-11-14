@@ -10,7 +10,7 @@
 
 @protocol JDNetworkRequestDatasource <NSObject>
 
-- (NSString *)jdNetworkRequestBaseURLString; //基本网址，用于初始化
+- (NSString *)jdNetworkRequestBaseURLString; //用于初始化的网址
 
 @end
 
